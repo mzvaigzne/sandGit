@@ -1,0 +1,1 @@
+Strādā hh  h bg hgh 
