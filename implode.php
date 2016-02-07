@@ -1,2 +1,4 @@
 <?php
-$name = array('matīss','Caks Noriss', 'Maikls');
+$name = array('matīss','Čaks Noriss', 'Maikls');
+print_r($name);
+echo '<br>', implode(', ', $name);

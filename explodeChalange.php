@@ -1,22 +1,21 @@
 <?php
 
-$text = 'Viens Divi Trīss';
+$text = 'Viens Divi  Trīss';
 $atdalitajs = ' ';
 $text = explode($atdalitajs, $text);
 $arrayCount = count($text);
 echo $arrayCount,'<br>';
-for ($counter = 1; $counter <= $arrayCount; $counter++) {
+$number = 1;
+while($number<=$arrayCount){
+    foreach ($text as $key => $value){
+    if ($value != ' '&& $value != NULL) {
+        echo '<pre>';
+        echo  $number, $value;
+        echo '</pre>';
+        $number++;
 
-
-}
-foreach ($text as $key => $value) {
-    if ($value == ' ' || $value == '  ' || $value == '   ') {
-        
-    } else {
-        $key = $key++;
-        echo $value . "<br>", $key, '<br/>';
+    }else{
+        echo " kkas nav ";
     }
 }
-echo '<pre>';
-
-echo '</pre>';
+}
